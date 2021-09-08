@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css">
+</head>
+<body>
+  <div id="app" >在加载了</div>
+  <script>
+    window.$docsify = {
+        //仓库
+      name: 'L-09的法硕知识库',
+      repo: 'https://github.com/FLa002/kaoyan',
+      //自定义设置
+      coverpage: true,//封面
+      maxLevel: 4, //默认渲染层级
+      //subMaxLevel: 3, //生成目录层级
+      auto2top: true, //切换页面后是否跳至顶部
+      loadSidebar: true, //开启侧边栏
+      onlyCover: false, //只在访问主页时加载封面
+
+      //搜索插件
+      search: 'auto',
+        search: {
+        maxAge: 86400000,
+        paths: '/',
+        placeholder: '查一下就知道了',
+        noData: '没有哦',
+        namespace: 'L-09法硕',
+      },
+
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+</body>
+</html>
